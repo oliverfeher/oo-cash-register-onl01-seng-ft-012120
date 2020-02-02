@@ -27,7 +27,7 @@ class CashRegister
   
   def apply_discount()
     if @discount > 0
-      discount_value = (price * discount) / 100.0
+      discount_value = discount.to_i / 100.0
       discount_amount = @total * discount_value
       @total -= discount_amount
       return "After the discount, the total comes to $#{total}."
@@ -41,8 +41,8 @@ class CashRegister
   end
   
   def void_last_transaction
-    
     @items.pop
+    @total - @price
   end
   
 end
