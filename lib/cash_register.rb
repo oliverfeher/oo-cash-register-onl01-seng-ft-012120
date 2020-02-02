@@ -26,7 +26,6 @@ class CashRegister
       discount_amount = @total * discount_value
       @total = @total - discount_amount
       return "After the discount, the total comes to $#{total}."
-      self.total
     else
       return "There is no discount to apply."
     end
