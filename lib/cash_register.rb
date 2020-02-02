@@ -25,10 +25,10 @@ class CashRegister
       discount_value = discount.to_i / 100.0
       discount_amount = @total * discount_value
       @total = @total - discount_amount
-      puts "After the discount, the total comes to $#{@total}"
+      return  "After the discount, the total comes to $#{@total}"
       self.total
     else
-      puts "There is no discount to apply"
+      return "There is no discount to apply"
     end
   end
 
