@@ -1,4 +1,5 @@
 
+
 class CashRegister
 
   attr_accessor :total, :items, :discount, :price
@@ -44,7 +45,7 @@ class CashRegister
     if self.items.size < 1
       @total = 0
     else
-      @total - @price
+      @total = @total - @price
       @items.pop
     end
   end
