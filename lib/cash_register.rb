@@ -44,7 +44,9 @@ class CashRegister
     
     @items.pop
     @total = @total - @price
-    @total.to_f
+    if @items = []
+      @total = 0
+    end
   end
   
 end
