@@ -1,3 +1,5 @@
+
+
 class CashRegister
 
   attr_accessor :total, :items, :discount, :price
@@ -7,6 +9,8 @@ class CashRegister
     @discount = discount
     @items = []
     @total = 0
+    @total.to_f
+
   end
   
   def total
