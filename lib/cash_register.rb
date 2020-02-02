@@ -43,7 +43,7 @@ class CashRegister
   
   def void_last_transaction
     if self.items.size < 1
-      return @total = 0.to_f
+      return @total = 0
     else
       @total = @total - @price
       @items.pop
